@@ -2,7 +2,7 @@ const ProjectAPI = {
   projects: [
     { number: 5, 
       name: "My Portfolio", 
-      description: "This website, the website that you are looking at is built with Node.JS and React. I used Webpack2 and ReactRouter v4 for this project. It is a fun project that I decided to do to learn more about react.",
+      description: "This website, the website that you are looking at is built with Node.JS and React. I used Webpack2 and ReactRouter v4 for this project. It is a fun project that I decided to do to learn more about ReactJS and CSS.",
       photo: "charmainesphotom.jpg",
       link: ""
     },

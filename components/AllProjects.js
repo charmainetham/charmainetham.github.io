@@ -3,7 +3,7 @@ import ProjectAPI from '../src/api'
 import { Link } from 'react-router-dom'
 
 const AllProjects = () => (
-  <div>
+  <div className='projectList'>
     <ul>
       {
         ProjectAPI.all().map(p => (

@@ -11,12 +11,13 @@ const Project = (props) => {
   }
   return (
 
-    <div>
-      <h1>{project.name}</h1>
-      <h2>Description:</h2>
-      <p> {project.description}</p>
-      <img src = {images[project.photo]}></img>
-      <Link to='/projects'>Back</Link>
+    <div className='projectContainer'>
+      <div className='projectTitle'><h1>{project.name}</h1></div>
+      <div className='projectDescription'>
+        <h2>Description:</h2>
+        <p> {project.description}</p>
+      </div>
+      <div className='projectImage'><img src = {images[project.photo]}></img></div>
     </div>
   )
 }

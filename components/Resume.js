@@ -1,8 +1,9 @@
 import React from 'react'
+import myResumePic from '../assets/images/resume.jpg';
 
 const Resume = () => (
-    <div>
-        <iframe src="https://resume.creddle.io/resume/h5nv0ge2dqr"></iframe>
+    <div className='resumeImg'>
+        <img src={myResumePic}></img>
     </div>
 )
 

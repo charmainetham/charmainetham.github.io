@@ -1,12 +1,27 @@
-import React from 'react'
-import Header from './Header'
-import Main from './Main'
+import React from 'react';
+import Header from './Header';
+import Main from './Main';
+import {withRouter} from 'react-router-dom';
 
-const App = () => (
-  <div>
-    <Header />
-    <Main />
-  </div>
-)
+class App extends React.Component {
+  render() {
+    console.log(window.location.hash);
+    const home = (window.location.hash === '#/');
+    let showHeader = null;
+    if (home) {
+      showHeader =''
+    } else {
+      showHeader = <Header />
+    }
+    return(
 
-export default App
+      <div>
+        {showHeader}
+        <Main />
+      </div>
+    );
+  }
+
+}
+
+export default App;

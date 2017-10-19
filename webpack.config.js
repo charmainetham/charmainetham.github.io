@@ -26,10 +26,17 @@ const config ={
                   options: {
                     name: '[path][name].[ext]'
                   }  
-            }
-        ]
-      }	
-	         ]
+                } 
+              ]
+            },
+            {
+              test: /\.css$/,
+              use: [
+                { loader: "style-loader" },
+                { loader: "css-loader" }
+              ]
+            }	
+	        ]
 	}	
 };
 module.exports  = config;
