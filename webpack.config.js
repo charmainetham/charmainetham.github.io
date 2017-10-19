@@ -11,6 +11,14 @@ const config ={
   devServer: {
     contentBase: './dist',
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin() ,
+    new webpack.DefinePlugin({
+      'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+      }
+    })
+  ],
   module: {
     rules:[
           	{
