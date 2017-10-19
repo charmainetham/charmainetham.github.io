@@ -30,7 +30,7 @@
     "clean": "rimraf dist",
     "deploy": "gh-pages -d build",
     "start": "node server.js",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.js",
     "build": "npm run clean && npm run build:webpack"
   },
   "keywords": [],
