@@ -5,11 +5,11 @@ const config ={
     app: './index.js',
   },
   output: {
-    path: __dirname+'/dist',
+    path: __dirname,
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: '/',
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin() ,
