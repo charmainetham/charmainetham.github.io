@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectAPI from '../src/api'
 import { Link } from 'react-router-dom'
+
 const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
 const Project = (props) => {      
   const project = ProjectAPI.get(
@@ -10,7 +11,6 @@ const Project = (props) => {
     return <div>Sorry, but the project was not found</div>
   }
   return (
-
     <div className='projectContainer'>
       <div className='projectTitle'><h1>{project.name}</h1></div>
       <div className='projectDescription'>

@@ -13,7 +13,6 @@ class App extends React.Component {
       showHeader = <Header />
     }
     return(
-
       <div>
         {showHeader}
         <Main />

@@ -11,9 +11,9 @@ const Home = () => (
       </div>
       <div className='rightnavhome'>
         <ul>
-            <li><Link to='/about'>ABOUT</Link></li>
-            <li><Link to='/projects'>PROJECTS</Link></li>
-            <li><Link to='/resume'>RESUME</Link></li>
+          <li><Link to='/about'>ABOUT</Link></li>
+          <li><Link to='/projects'>PROJECTS</Link></li>
+          <li><Link to='/resume'>RESUME</Link></li>
         </ul>
       </div>
     </div>
